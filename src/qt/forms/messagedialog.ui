@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MessageDialog</class>
+ <widget class="QWidget" name="MessageDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>741</width>
+    <height>500</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_5">
+   <item row="0" column="0">
+    <widget class="QGroupBox" name="encodeMessageBox">
+     <property name="title">
+      <string>&amp;Encode Message</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_4">
+      <item row="0" column="0">
+       <layout class="QGridLayout" name="gridLayout_3" columnstretch="3,16,4">
+        <item row="1" column="0">
+         <widget class="QLabel" name="encodeMessageLabel">
+          <property name="text">
+           <string>&amp;Message:</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTop|Qt::AlignTrailing</set>
+          </property>
+          <property name="buddy">
+           <cstring>encodeMessage</cstring>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0">
+         <widget class="QLabel" name="encodeAddressLabel">
+          <property name="text">
+           <string>&amp;Address:</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+          <property name="buddy">
+           <cstring>encodeAddress</cstring>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QLineEdit" name="encodeAddress"/>
+        </item>
+        <item row="0" column="2">
+         <widget class="QPushButton" name="encodeButton">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="text">
+           <string>E&amp;ncode</string>
+          </property>
+          <property name="autoDefault">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1" colspan="2">
+         <widget class="QPlainTextEdit" name="encodeMessage">
+          <property name="tabChangesFocus">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <widget class="QGroupBox" name="decodeMessageBox">
+     <property name="title">
+      <string>&amp;Decode Message</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="0" column="0">
+       <layout class="QGridLayout" name="gridLayout_2" columnstretch="3,8,4,4,4">
+        <item row="1" column="1">
+         <widget class="QDateEdit" name="fromDate">
+          <property name="minimumDate">
+           <date>
+            <year>2013</year>
+            <month>3</month>
+            <day>13</day>
+           </date>
+          </property>
+          <property name="calendarPopup">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0">
+         <widget class="QLabel" name="decodeAddressLabel">
+          <property name="text">
+           <string>Add&amp;ress:</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+          <property name="buddy">
+           <cstring>decodeAddress</cstring>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1" colspan="4">
+         <widget class="QPlainTextEdit" name="decodeMessage">
+          <property name="focusPolicy">
+           <enum>Qt::NoFocus</enum>
+          </property>
+          <property name="readOnly">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="fromDateLabel">
+          <property name="text">
+           <string>&amp;From Date:</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+          <property name="buddy">
+           <cstring>fromDate</cstring>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLabel" name="decodeMessageLabel">
+          <property name="text">
+           <string>Message:</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTop|Qt::AlignTrailing</set>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="2">
+         <widget class="QLabel" name="toDateLabel">
+          <property name="text">
+           <string>&amp;To Date:</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+          <property name="buddy">
+           <cstring>toDate</cstring>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="4">
+         <widget class="QPushButton" name="searchButton">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="text">
+           <string>&amp;Search</string>
+          </property>
+          <property name="autoDefault">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="3" colspan="2">
+         <widget class="QDateEdit" name="toDate">
+          <property name="minimumDate">
+           <date>
+            <year>2013</year>
+            <month>3</month>
+            <day>13</day>
+           </date>
+          </property>
+          <property name="calendarPopup">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1" colspan="3">
+         <widget class="QLineEdit" name="decodeAddress"/>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <tabstops>
+  <tabstop>encodeAddress</tabstop>
+  <tabstop>encodeMessage</tabstop>
+  <tabstop>encodeButton</tabstop>
+  <tabstop>decodeAddress</tabstop>
+  <tabstop>fromDate</tabstop>
+  <tabstop>toDate</tabstop>
+  <tabstop>searchButton</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
